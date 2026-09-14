@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematika O'quv Markazi</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+  :root{
+    --bg: #16302B;
+    --bg-deep: #0F221E;
+    --panel: #1D3A34;
+    --line: #2E5048;
+    --chalk: #F2C14E;
+    --chalk-soft: #F7D888;
+    --text: #EDECE4;
+    --text-dim: #9FB8B1;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+
+  body{
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 42px 42px;
+    background-position: -1px -1px;
+    background-color: var(--bg);
+  }
+
+  .wrap{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header{
+    padding: 72px 0 56px;
+  }
+
+  .kicker{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--chalk);
+    margin: 0 0 18px;
+  }
+
+  h1{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: clamp(34px, 6vw, 52px);
+    line-height: 1.15;
+    margin: 0 0 20px;
+    max-width: 15ch;
+  }
+
+  .lede{
+    font-size: 18px;
+    color: var(--text-dim);
+    max-width: 46ch;
+    margin: 0 0 34px;
+  }
+
+  .cta{
+    display: inline-block;
+    background: var(--chalk);
+    color: var(--bg-deep);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .cta:hover{ background: var(--chalk-soft); }
+
+  section{
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  h2{
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 0 22px;
+  }
+
+  .paths{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 560px){ .paths{ grid-template-columns: 1fr; } }
+
+  .path{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 18px 20px;
+  }
+  .path h3{
+    font-size: 16px;
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .path p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+
+  .price-card{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .price-label{
+    font-size: 15px;
+    color: var(--text-dim);
+  }
+  .price-value{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    color: var(--chalk);
+    font-weight: 500;
+  }
+  .price-unit{
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-left: 6px;
+  }
+
+  .levels{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .levels li{
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 16px;
+  }
+  .levels li:first-child{ border-top: none; }
+  .lvl-mark{
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--chalk);
+    flex-shrink: 0;
+    width: 22px;
+  }
+
+  footer{
+    padding: 44px 0 64px;
+    border-top: 1px solid var(--line);
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  footer a{ color: var(--chalk-soft); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">MATEMATIKA O'QUV MARKAZI</p>
+      <h1>Matematikani tushunib yechadigan bo'ling, yodlamang.</h1>
+      <p class="lede">
+        Sertifikat, DTM yoki maktab dasturi — qaysi maqsad bo'lmasin, darajangizga
+        mos guruhga qo'shiladi va aniq natija sari qadam-baqadam boramiz.
+      </p>
+      <a class="cta" href="#" id="botLink">Botda ro'yxatdan o'tish →</a>
+    </header>
+
+    <section>
+      <h2>Sizga mos yo'nalish</h2>
+      <div class="paths">
+        <div class="path">
+          <h3>Sertifikat</h3>
+          <p>Xalqaro yoki milliy sertifikat imtihonlariga tayyorgarlik.</p>
+        </div>
+        <div class="path">
+          <h3>DTM</h3>
+          <p>Test tuzilishi, vaqtni boshqarish va tez yechish usullari.</p>
+        </div>
+        <div class="path">
+          <h3>Maktab dasturi</h3>
+          <p>Sinf dasturidagi bo'shliqlarni yopib, baholarni ko'tarish.</p>
+        </div>
+        <div class="path">
+          <h3>0 dan boshlash</h3>
+          <p>Asosdan boshlab, har bir mavzuni tushunib olguningizcha.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Darajangiz qanday bo'lishidan qat'i nazar</h2>
+      <ul class="levels">
+        <li><span class="lvl-mark">01</span> 0 dan boshlashim kerak</li>
+        <li><span class="lvl-mark">02</span> O'quvlarim yaxshi, lekin baribir xotirjam emasman</li>
+        <li><span class="lvl-mark">03</span> Maktabda hammadan zo'r bo'lishim kerak</li>
+        <li><span class="lvl-mark">04</span> Sertifikatim bor, lekin yana o'qimoqchiman</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Narx</h2>
+      <div class="price-card">
+        <span class="price-label">1 oylik o'qish</span>
+        <span><span class="price-value">250 000</span><span class="price-unit">so'm / oy</span></span>
+      </div>
+    </section>
+
+    <footer>
+      Ro'yxatdan o'tish va guruhga qo'shilish uchun Telegram botimizdan foydalaning:
+      <a href="#" id="botLinkFooter">@your_bot_username</a>
+    </footer>
+  </div>
+
+  <script>
+    // Bot username'ni bu yerga qo'ying — ikkala havola ham shu manzilga olib boradi
+    const BOT_USERNAME = "your_bot_username"; // masalan: mathmarkaz_bot
+    const url = "https://t.me/" + BOT_USERNAME;
+    document.getElementById("botLink").href = url;
+    document.getElementById("botLinkFooter").href = url;
+    document.getElementById("botLinkFooter").textContent = "@" + BOT_USERNAME;
+  </script>
+</body>
+</html>
